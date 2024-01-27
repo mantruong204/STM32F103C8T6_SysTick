@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+"bt1_ltn\startup_stm32f103xb.o"
+"bt1_ltn\main.o"
+"bt1_ltn\stm32f1xx_it.o"
+"bt1_ltn\stm32f1xx_ll_gpio.o"
+"bt1_ltn\stm32f1xx_ll_pwr.o"
+"bt1_ltn\stm32f1xx_ll_exti.o"
+"bt1_ltn\stm32f1xx_ll_rcc.o"
+"bt1_ltn\stm32f1xx_ll_utils.o"
+"bt1_ltn\system_stm32f1xx.o"
+--strict --scatter "BT1_LTN\BT1_LTN.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BT1_LTN.map" -o BT1_LTN\BT1_LTN.axf
